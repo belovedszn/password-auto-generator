@@ -43,6 +43,9 @@ body {
 .container svg {
     height: 30px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    
 }
 
 .display input {
