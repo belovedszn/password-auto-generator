@@ -40,7 +40,7 @@ body {
     padding-bottom: 7px;
 }
 
-.display svg {
+.container svg {
     height: 30px;
     cursor: pointer;
 }
