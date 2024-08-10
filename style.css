@@ -61,6 +61,12 @@ body {
     color: white;
 }
 
+.copy-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container button {
     border: 0;
     outline: 0;
