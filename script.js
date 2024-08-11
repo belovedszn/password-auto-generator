@@ -1,7 +1,7 @@
 
 
 const passwordBox = document.querySelector(".password");
-const lenght = 12;
+const lenght = 20;
 const passwordBtn = document.querySelector(".passwordBtn");
 const copy = document.querySelector(".copy");
 
