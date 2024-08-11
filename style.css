@@ -1,83 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background: #002339;
-    color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #355070;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
-    width: 90%;
-    margin: 12%;
-    max-width: 700px;
+  width: 90%;
+  margin: 12%;
+  max-width: 700px;
 }
 
 .display {
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    background: #fff;
-    color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 26px 20px;
-    border-radius: 5px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background: #fff;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 20px;
+  border-radius: 5px;
 }
 
 .container h1 {
-    font-weight: 500;
-    font-size: 45px;
+  font-weight: 500;
+  font-size: 45px;
 }
 
 .container span {
-    color: #019f55;
-    border-bottom: 4px solid #019f55;
-    padding-bottom: 7px;
+  color: #32cd32;
+  border-bottom: 4px solid #32cd32;
+  padding-bottom: 7px;
 }
 
 .container svg {
-    height: 30px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    
+  height: 50px;
+  cursor: pointer;
+  width: 40px;
 }
 
 .display input {
-    border: 0;
-    outline: 0;
-    font-size: 24px;
+  border: 0;
+  outline: 0;
+  font-size: 24px;
 }
 
 .container button svg {
-    height: 28px;
-    width: 28px;
-    margin-right: 10px;
-    color: white;
-}
-
-.copy-btn {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  height: 28px;
+  width: 28px;
+  margin-right: 10px;
+  color: white;
 }
 
 .container button {
-    border: 0;
-    outline: 0;
-    background: #019f55;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px 26px;
-    border-radius: 5px;
-    font-size: 22px;
-    font-weight: 300;
-    cursor: pointer;
+  border: 0;
+  outline: 0;
+  background: #32cd32;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 26px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+
+.copy-btn {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (max-width: 830px) {
+  .display {
+    width: 70%;
+  }
+  .container h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .display {
+    width: 50%;
+  }
+  .display input {
+    font-size: 18px;
+  }
+  .container {
+    padding: 7%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 5%;
+    padding: 10%;
+    max-width: none;
+  }
+
+  .container h1 {
+    font-size: 28px;
+  }
+
+  .display {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 20px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .display input {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .copy-btn {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .container button {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  .container svg {
+    height: 40px;
+    width: 30px;
+  }
 }
